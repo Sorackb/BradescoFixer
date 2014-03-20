@@ -1,0 +1,26 @@
+{
+  "name": "Bradesco-Fixer",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This extension fix the insurance quote of Bradesco Seguros for Chrome.",
+  "homepage_url": "http://extensionizr.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://wwws.bradescoseguros.com.br/100Corretor/br/auto/propostas_venda/*"
+      ],
+			"web_accessible_resources": [
+				"src/inject/inject2.js"
+			],
+      "js": [
+        "js/corrige.js"
+      ]
+    }
+  ]
+}
