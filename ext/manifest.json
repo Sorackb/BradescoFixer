@@ -15,9 +15,6 @@
       "matches": [
         "https://wwws.bradescoseguros.com.br/100Corretor/br/auto/propostas_venda/*"
       ],
-			"web_accessible_resources": [
-				"src/inject/inject2.js"
-			],
       "js": [
         "js/corrige.js"
       ]
